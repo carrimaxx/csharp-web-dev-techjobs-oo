@@ -13,6 +13,15 @@ namespace TechJobsOO
         public CoreCompetency JobCoreCompetency { get; set; }
 
         // TODO: Add the two necessary constructors.
+        // dec 23
+        public Job(string name, Employer employerName, Location employerLocation, PositionType jobType, CoreCompetency jobCoreCompetency)
+        {
+            Name = Name;
+            EmployerName = employerName;
+            EmployerLocation = employerLocation;
+            JobType = jobType;
+            JobCoreCompetency = jobCoreCompetency;
+        }
 
         // TODO: Generate Equals() and GetHashCode() methods.
     }

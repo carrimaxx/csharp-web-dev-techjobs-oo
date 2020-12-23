@@ -3,37 +3,42 @@ namespace TechJobsOO
 {
     public class CoreCompetency
     {
-        private int id;
-        private static int nextId = 1;
-        private string value;
+        // commented out original code dec23:
+        //private int id;
+        //private static int nextId = 1;
+        //private string value;
 
         // TODO: Change the fields to auto-implemented properties.
+        // dec 23:
+        public int Id { get; set; }
+        public static int MyProperty { get; set; } = 1;
+        public string Value { get; set; }
 
-        public CoreCompetency()
+        public CoreCompetency(int nextId) //dec23
         {
-            id = nextId;
-            nextId++;
+            Id = nextId; //dec23
+            nextId++; //dec23
         }
 
         public CoreCompetency(string v) : this()
         {
-            value = v;
+            Value = v; //dec23
         }
 
         public override bool Equals(object obj)
         {
             return obj is CoreCompetency competency &&
-                   id == competency.id;
+                   Id == competency.Id; //dec23
         }
 
         public override int GetHashCode()
         {
-            return HashCode.Combine(id);
+            return HashCode.Combine(Id); //dec23
         }
 
         public override string ToString()
         {
-            return value;
+            return Value;
         }
     }
     }
