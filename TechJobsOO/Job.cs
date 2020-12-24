@@ -24,5 +24,16 @@ namespace TechJobsOO
         }
 
         // TODO: Generate Equals() and GetHashCode() methods.
+        public override bool Equals(object obj) //dec23
+        {
+            return obj is Job job &&
+                   Id == Job.Id; //dec23
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is CoreCompetency competency &&
+                   Id == competency.Id; //dec23
+        }
     }
 }
