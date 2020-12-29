@@ -9,9 +9,9 @@ namespace TechJobsOO
         //private string value;
 
         // TODO Add properties and custom methods as needed to the Location, CoreCompetency, and PositionType classes.
-        // TODO: Change the fields to auto-implemented properties.
-        // dec 23:
-        public int Id { get; set; }
+        
+        // first todo done
+        public int Id { get; }
         private static int nextId = 1;
         public string Value { get; set; }
 
@@ -21,9 +21,9 @@ namespace TechJobsOO
             nextId++; //dec23
         }
 
-        public CoreCompetency(string v) : this()
+        public CoreCompetency(string value) : this()
         {
-            Value = v; //dec23
+            Value = value; //dec29 updated
         }
 
         public override bool Equals(object obj)
