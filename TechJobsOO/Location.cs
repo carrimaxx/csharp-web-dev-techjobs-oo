@@ -6,6 +6,7 @@ namespace TechJobsOO
         public int Id { get; }
         private static int nextId = 1;
         public string Value { get; set; }
+        public int ZipCode { get; set; } // added dec25
 
         public Location()
         {
@@ -13,10 +14,9 @@ namespace TechJobsOO
             nextId++;
         }
 
-        // TODO: Add a second constructor to this class that uses the Location() constructor and sets the value of the value field.
+        // TODO Add properties and custom methods as needed to the Location, CoreCompetency, and PositionType classes.
 
-
-        public Location(string value) // dec 23 , TODO : solve using the location constructor
+        public Location(string value) : this() // dec 29, pretty sure this is right
         {
             Value = value;
         }
@@ -31,9 +31,9 @@ namespace TechJobsOO
             return HashCode.Combine(Id);
         }
 
-        public override string ToString()
-        {
-            return Value;
-        }
+        //public override string ToString()     // commented out to test dec29
+        //{
+        //    return Value;
+        //}
     }
 }

@@ -6,6 +6,16 @@ namespace TechJobsOO
     {
         static void Main(string[] args)
         {
+
+            //sample dec29: 
+            Employer sample = new Employer("LaunchCode");
+            Console.WriteLine(sample.Value);
+            Console.WriteLine(sample.Id);
+
+            Location location = new Location("Chicago");
+            Console.WriteLine(location.Value);
+            Console.WriteLine(location.Id);
+
             /*
             Job job1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
             Job job2 = new Job("Web Developer", new Employer("LaunchCode"), new Location("St. Louis"), new PositionType("Front-end developer"), new CoreCompetency("JavaScript"));

@@ -8,13 +8,14 @@ namespace TechJobsOO
         //private static int nextId = 1;
         //private string value;
 
+        // TODO Add properties and custom methods as needed to the Location, CoreCompetency, and PositionType classes.
         // TODO: Change the fields to auto-implemented properties.
         // dec 23:
         public int Id { get; set; }
-        public static int MyProperty { get; set; } = 1;
+        private static int nextId = 1;
         public string Value { get; set; }
 
-        public CoreCompetency(int nextId) //dec23
+        public CoreCompetency() //dec29
         {
             Id = nextId; //dec23
             nextId++; //dec23

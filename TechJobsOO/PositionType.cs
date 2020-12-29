@@ -19,5 +19,22 @@ namespace TechJobsOO
         }
 
         // TODO: Add custom Equals(), GetHashCode(), and ToString() methods.
+        // TODO Add properties and custom methods as needed to the Location, CoreCompetency, and PositionType classes.
+
+        public override bool Equals(object obj)         // equals and gethashcode, tostring override added dec25
+        {
+            return obj is PositionType positionType &&
+                   Id == positionType.Id;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Id);
+        }
+
+        public override string ToString()
+        {
+            return Value;
+        }
     }
 }

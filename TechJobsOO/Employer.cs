@@ -13,7 +13,10 @@ namespace TechJobsOO
             nextId++;
         }
 
-        public Employer(string value) : this()
+        // CHECK OUT  https://stackoverflow.com/questions/1814953/how-to-do-constructor-chaining-in-c-sharp
+        // https://www.c-sharpcorner.com/UploadFile/825933/constructor-chaining-in-C-Sharp/
+
+        public Employer(string value) : this() // <-- calls the first constructor also called constructor chaining
         {
             Value = value;
         }
