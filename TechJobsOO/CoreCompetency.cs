@@ -9,8 +9,6 @@ namespace TechJobsOO
         //private string value;
 
         // TODO Add properties and custom methods as needed to the Location, CoreCompetency, and PositionType classes.
-        
-        // first todo done
         public int Id { get; }
         private static int nextId = 1;
         public string Value { get; set; }

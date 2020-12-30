@@ -31,9 +31,9 @@ namespace TechJobsOO
             return HashCode.Combine(Id);
         }
 
-        //public override string ToString()     // commented out to test dec29
-        //{
-        //    return Value;
-        //}
+        public override string ToString()     // commented out to test dec29
+        {
+            return Value;
+        }
     }
 }
