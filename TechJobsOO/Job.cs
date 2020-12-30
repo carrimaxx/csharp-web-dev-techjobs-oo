@@ -28,6 +28,21 @@ namespace TechJobsOO
 
         public override bool Equals(object obj)  // equals and gethashcode added dec25
         {
+            if (obj == this)        // added dec 30 
+            {
+                return true;
+            }
+
+            if (obj == null)
+            {
+                return false;
+            }
+
+            if (obj.GetType() != this.GetType())
+            {
+                return false;
+            }
+            
             return obj is Job job &&
                    Id == job.Id;
         }
@@ -37,5 +52,13 @@ namespace TechJobsOO
             return HashCode.Combine(Id);
         }
 
+        // no to string yet dec 30 1:21pm
+        // tostring method added dec30 1:24pm
+
+       
+        public override string ToString()
+        { 
+            return "\nID: " + Id + " " + "\nName: " + Name + " " + "\nEmployer:" + EmployerName + "\nLocation:" + EmployerLocation + "\nPosition Type:" + JobType + "\nCore Competency:" + JobCoreCompetency;
+        }
     }
 }

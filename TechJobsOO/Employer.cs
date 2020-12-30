@@ -13,9 +13,6 @@ namespace TechJobsOO
             nextId++;
         }
 
-        // CHECK OUT  https://stackoverflow.com/questions/1814953/how-to-do-constructor-chaining-in-c-sharp
-        // https://www.c-sharpcorner.com/UploadFile/825933/constructor-chaining-in-C-Sharp/
-
         public Employer(string value) : this() // <-- calls the first constructor also called constructor chaining
         {
             Value = value;
@@ -34,7 +31,14 @@ namespace TechJobsOO
 
         public override string ToString()
         {
-            return Value;
+            if (Value == "")
+            {
+                return " Data not available ";
+            }
+            else
+            {
+                return " " + Value + " ";
+            }
         }
     }
 }

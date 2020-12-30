@@ -3,12 +3,6 @@ namespace TechJobsOO
 {
     public class CoreCompetency
     {
-        // commented out original code dec23:
-        //private int id;
-        //private static int nextId = 1;
-        //private string value;
-
-        // TODO Add properties and custom methods as needed to the Location, CoreCompetency, and PositionType classes.
         public int Id { get; }
         private static int nextId = 1;
         public string Value { get; set; }
@@ -37,7 +31,14 @@ namespace TechJobsOO
 
         public override string ToString()
         {
-            return Value;
+            if (Value == "")
+            {
+                return " Data not available ";
+            }
+            else
+            {
+                return " " + Value + " ";
+            }
         }
     }
 }
