@@ -7,26 +7,26 @@ namespace TechJobsOO
         private static int nextId = 1;
         public string Value { get; set; }
 
-        public CoreCompetency() //dec29
+        public CoreCompetency() 
         {
-            Id = nextId; //dec23
-            nextId++; //dec23
+            Id = nextId; 
+            nextId++; 
         }
 
         public CoreCompetency(string value) : this()
         {
-            Value = value; //dec29 updated
+            Value = value; 
         }
 
         public override bool Equals(object obj)
         {
             return obj is CoreCompetency competency &&
-                   Id == competency.Id; //dec23
+                   Id == competency.Id;
         }
 
         public override int GetHashCode()
         {
-            return HashCode.Combine(Id); //dec23
+            return HashCode.Combine(Id); 
         }
 
         public override string ToString()

@@ -42,7 +42,7 @@ namespace TechJobTests
         public void FirstToStringMethodTest()
         {
             Job stringTest = new Job("Ice cream tester", new Employer("Ted Drewes"), new Location(""), new PositionType("UX"), new CoreCompetency("Tasting ability"));
-            // TODO break down the tests
+            // TODO break down the tests, double check this set of tests
             // first test: spaces before and after value
             Assert.AreEqual(stringTest.EmployerName.ToString(), " Ted Drewes ");
             Assert.AreEqual(stringTest.ToString(), "\nID: 1 " + "\nName: Ice cream tester " + "\nEmployer: Ted Drewes " + "\nLocation: Data not available " + "\nPosition Type: UX " + "\nCore Competency: Tasting ability ");

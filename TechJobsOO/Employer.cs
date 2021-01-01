@@ -13,7 +13,7 @@ namespace TechJobsOO
             nextId++;
         }
 
-        public Employer(string value) : this() // <-- calls the first constructor also called constructor chaining
+        public Employer(string value) : this() 
         {
             Value = value;
         }

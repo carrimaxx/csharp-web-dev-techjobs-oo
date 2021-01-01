@@ -14,9 +14,7 @@ namespace TechJobsOO
             nextId++;
         }
 
-        // TODO Add properties and custom methods as needed to the Location, CoreCompetency, and PositionType classes.
-
-        public Location(string value) : this() // dec 29, pretty sure this is right
+        public Location(string value) : this() 
         {
             Value = value;
         }
@@ -31,7 +29,7 @@ namespace TechJobsOO
             return HashCode.Combine(Id);
         }
 
-        public override string ToString()     // commented out to test dec29
+        public override string ToString()
         {
             if (Value == "")
             {

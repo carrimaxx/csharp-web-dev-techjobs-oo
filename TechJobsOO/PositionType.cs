@@ -18,9 +18,7 @@ namespace TechJobsOO
             Value = value;
         }
 
-           // TODO Add properties and custom methods as needed to the Location, CoreCompetency, and PositionType classes.
-
-        public override bool Equals(object obj)         // equals and gethashcode, tostring override added dec25
+        public override bool Equals(object obj)   
         {
             return obj is PositionType positionType &&
                    Id == positionType.Id;

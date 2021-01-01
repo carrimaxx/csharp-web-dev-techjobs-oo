@@ -11,7 +11,6 @@ namespace TechJobsOO
         public PositionType JobType { get; set; }
         public CoreCompetency JobCoreCompetency { get; set; }
 
-        // fixed job with 5 params constructor and id initializer constructor dec29
         public Job()
         {
             Id = nextId;
@@ -26,7 +25,7 @@ namespace TechJobsOO
             JobCoreCompetency = jobCoreCompetency;
         }
 
-        public override bool Equals(object obj)  // equals and gethashcode added dec25
+        public override bool Equals(object obj)  
         {
             if (obj == this)        // added dec 30 
             {
@@ -51,10 +50,6 @@ namespace TechJobsOO
         {
             return HashCode.Combine(Id);
         }
-
-        // no to string yet dec 30 1:21pm
-        // tostring method added dec30 1:24pm
-
        
         public override string ToString()
         { 
