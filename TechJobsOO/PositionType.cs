@@ -1,13 +1,13 @@
 ﻿using System;
 namespace TechJobsOO
 {
-    public class PositionType
+    public class PositionType : JobField
     {
-        public int Id { get; }
-        private static int nextId = 1;
-        public string Value { get; set; }
+        //public int Id { get; }
+        //private static int nextId = 1;
+        //public string Value { get; set; }
 
-        public PositionType()
+        public PositionType() 
         {
             Id = nextId;
             nextId++;
@@ -24,21 +24,21 @@ namespace TechJobsOO
                    Id == positionType.Id;
         }
 
-        public override int GetHashCode()
-        {
-            return HashCode.Combine(Id);
-        }
+        //public override int GetHashCode()
+        //{
+        //    return HashCode.Combine(Id);
+        //}
 
-        public override string ToString()
-        {
-            if (Value == "")
-            {
-                return " Data not available ";
-            }
-            else
-            {
-                return " " + Value + " ";
-            }
-        }
+        //public override string ToString()
+        //{
+        //    if (Value == "")
+        //    {
+        //        return " Data not available ";
+        //    }
+        //    else
+        //    {
+        //        return " " + Value + " ";
+        //    }
+        //}
     }
 }

@@ -1,11 +1,11 @@
 ﻿using System;
 namespace TechJobsOO
 {
-    public class CoreCompetency
+    public class CoreCompetency : JobField
     {
-        public int Id { get; }
-        private static int nextId = 1;
-        public string Value { get; set; }
+        //public int Id { get; }
+        //private static int nextId = 1;
+        //public string Value { get; set; }
 
         public CoreCompetency() 
         {
@@ -24,21 +24,21 @@ namespace TechJobsOO
                    Id == competency.Id;
         }
 
-        public override int GetHashCode()
-        {
-            return HashCode.Combine(Id); 
-        }
+        //public override int GetHashCode()
+        //{
+        //    return HashCode.Combine(Id); 
+        //}
 
-        public override string ToString()
-        {
-            if (Value == "")
-            {
-                return " Data not available ";
-            }
-            else
-            {
-                return " " + Value + " ";
-            }
-        }
+        //public override string ToString()
+        //{
+        //    if (Value == "")
+        //    {
+        //        return " Data not available ";
+        //    }
+        //    else
+        //    {
+        //        return " " + Value + " ";
+        //    }
+        //}
     }
 }

@@ -7,12 +7,30 @@ namespace TechJobsOO
     public abstract class JobField
     {
         public int Id { get; }
-        private static int nextId = 1;
+        internal static int NextId = 1; //public? abstract?
         public string Value { get; set; }
 
-
-        //public abstract bool Equals(object obj)
+        //public JobField()
         //{
+        //    Id = nextId;
+        //    nextId++;
         //}
+        public abstract override bool Equals(object obj); // should I add this?
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Id);
+        }
+        public override string ToString()
+        {
+            if (Value == "")
+            {
+                return " Data not available ";
+            }
+            else
+            {
+                return " " + Value + " ";
+            }
+        }
     }
 }

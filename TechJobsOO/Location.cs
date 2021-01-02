@@ -1,11 +1,11 @@
 ﻿using System;
 namespace TechJobsOO
 {
-    public class Location
+    public class Location : JobField
     {
-        public int Id { get; }
-        private static int nextId = 1;
-        public string Value { get; set; }
+        //public int Id { get; }
+        //private static int nextId = 1;
+        //public string Value { get; set; }
         public int ZipCode { get; set; } // added dec25
 
         public Location()
@@ -14,7 +14,7 @@ namespace TechJobsOO
             nextId++;
         }
 
-        public Location(string value) : this() 
+        public Location(string value) : base() 
         {
             Value = value;
         }
@@ -24,21 +24,21 @@ namespace TechJobsOO
                    Id == location.Id;
         }
 
-        public override int GetHashCode()
-        {
-            return HashCode.Combine(Id);
-        }
+        //public override int GetHashCode()
+        //{
+        //    return HashCode.Combine(Id);
+        //}
 
-        public override string ToString()
-        {
-            if (Value == "")
-            {
-                return " Data not available ";
-            }
-            else
-            {
-                return " " + Value + " ";
-            }
-        }
+        //public override string ToString()
+        //{
+        //    if (Value == "")
+        //    {
+        //        return " Data not available ";
+        //    }
+        //    else
+        //    {
+        //        return " " + Value + " ";
+        //    }
+        //}
     }
 }
