@@ -8,13 +8,13 @@ namespace TechJobsOO
         //public string Value { get; set; }
         public int ZipCode { get; set; } // added dec25
 
-        public Location()
-        {
-            Id = nextId;
-            nextId++;
-        }
+        //public Location()
+        //{
+        //    Id = nextId;
+        //    nextId++;
+        //}
 
-        public Location(string value) : base() 
+        public Location(string value) : base(value)
         {
             Value = value;
         }
@@ -24,10 +24,10 @@ namespace TechJobsOO
                    Id == location.Id;
         }
 
-        //public override int GetHashCode()
-        //{
-        //    return HashCode.Combine(Id);
-        //}
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Id);
+        }
 
         //public override string ToString()
         //{
