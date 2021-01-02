@@ -16,5 +16,16 @@ namespace TechJobsOO
         {
             return HashCode.Combine(Id);
         }
+        public override string ToString()
+        {
+            if (Value == "")
+            {
+                return "Location: Data not available \n";
+            }
+            else
+            {
+                return "Location: " + Value + " \n";
+            }
+        }
     }
 }

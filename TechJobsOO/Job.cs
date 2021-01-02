@@ -27,7 +27,7 @@ namespace TechJobsOO
 
         public override bool Equals(object obj)  
         {
-            if (obj == this)        // added dec 30 
+            if (obj == this)       
             {
                 return true;
             }
@@ -53,11 +53,8 @@ namespace TechJobsOO
        
         public override string ToString()
         {
-            //if (Name == null && EmployerName == null && EmployerLocation == null && JobType == null && JobCoreCompetency == null)
-            //{
-            //    throw new Exception("OOPS! This job does not seem to exist.");
-            //}
-            return "\nID: " + Id + " " + "\nName: " + Name + " " + "\nEmployer:" + EmployerName + "\nLocation:" + EmployerLocation + "\nPosition Type:" + JobType + "\nCore Competency:" + JobCoreCompetency + "\n";
+            return "\nID: " + Id + " \n" + "Name: " + Name + " \n" + EmployerName + EmployerLocation + JobType + JobCoreCompetency;
+            //return "\nID: " + Id + " \n" + "Name: " + Name + " \n" + "Employer: " + EmployerName + " \n" + "Location: " + EmployerLocation + " \n" + "Position Type: " + JobType + " \n" + "Core Competency: " + JobCoreCompetency + " \n" ;
         }
     }
 }

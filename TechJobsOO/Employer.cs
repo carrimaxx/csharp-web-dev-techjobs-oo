@@ -3,6 +3,9 @@ namespace TechJobsOO
 {
     public class Employer : JobField
     {
+        public Employer() : base()
+        {
+        }
         public Employer(string value) : base(value)
         {
         }
@@ -18,5 +21,16 @@ namespace TechJobsOO
             return HashCode.Combine(Id);
         }
 
+        public override string ToString()
+        {
+            if (Value == "")
+            {
+                return "Employer: Data not available \n";
+            }
+            else
+            {
+                return "Employer: " + Value + " \n";
+            }
+        }
     }
 }

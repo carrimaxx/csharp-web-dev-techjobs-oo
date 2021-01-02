@@ -6,7 +6,7 @@ namespace TechJobsOO
 {
     public abstract class JobField
     {
-        public int Id { get; set; }
+        public int Id { get; }
         private static int nextId = 1; 
         public string Value { get; set; }
 
@@ -21,20 +21,23 @@ namespace TechJobsOO
             Value = value;
         }
 
-        public abstract override bool Equals(object obj); // should I add this?
+        public abstract override bool Equals(object obj); 
 
         public abstract override int GetHashCode();
-      
-        public override string ToString()
-        {
-            if (Value == "")
-            {
-                return " Data not available ";
-            }
-            else
-            {
-                return " " + Value + " ";
-            }
-        }
+
+        public abstract override string ToString();
+        
+
+        //public override string ToString()
+        //{
+        //    if (Value == "")
+        //    {
+        //        return " Data not available ";
+        //    }
+        //    else
+        //    {
+        //        return " " + Value + " ";
+        //    }
+        //}
     }
 }

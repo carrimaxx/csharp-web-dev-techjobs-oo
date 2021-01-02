@@ -7,7 +7,9 @@ namespace TechJobsOO
     {
         static void Main(string[] args)
         {
-
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.BackgroundColor = ConsoleColor.White;
+            Console.Clear();
             //sample dec29: 
             //Employer sample = new Employer("LaunchCode");
             //Console.WriteLine(sample.Value);
@@ -23,6 +25,9 @@ namespace TechJobsOO
             //Console.WriteLine("test below");
             //Console.WriteLine(testJob.Id);
             //Console.WriteLine(testJob2.Id);
+            //Console.WriteLine(testJob2.EmployerName.Value);
+            //Console.WriteLine(testJob2.EmployerName.Id);
+
 
             //Job sampleJob1 = new Job();
             //Job sampleJob2 = new Job();
@@ -31,28 +36,24 @@ namespace TechJobsOO
             //Console.WriteLine(sampleJob1.Id);
             //Console.WriteLine(sampleJob2.Id);
 
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
-            Console.BackgroundColor = ConsoleColor.White;
-            Console.Clear();
+
 
 
             Job job1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
             Job job2 = new Job("Web Developer", new Employer("LaunchCode"), new Location("St. Louis"), new PositionType("Front-end developer"), new CoreCompetency("JavaScript"));
             Job job3 = new Job("Ice cream tester", new Employer(""), new Location("Home"), new PositionType("UX"), new CoreCompetency("Tasting ability"));
-            Job job4 = new Job();
 
             List<Job> jobs = new List<Job>();
 
             jobs.Add(job1);
             jobs.Add(job2);
             jobs.Add(job3);
-            jobs.Add(job4);
 
             foreach (Job job in jobs)
             {
                 Console.WriteLine(job);
             }
-            
+
         }
     }
 }
