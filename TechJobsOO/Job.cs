@@ -52,8 +52,12 @@ namespace TechJobsOO
         }
        
         public override string ToString()
-        { 
-            return "\nID: " + Id + " " + "\nName: " + Name + " " + "\nEmployer:" + EmployerName + "\nLocation:" + EmployerLocation + "\nPosition Type:" + JobType + "\nCore Competency:" + JobCoreCompetency;
+        {
+            //if (Name == null && EmployerName == null && EmployerLocation == null && JobType == null && JobCoreCompetency == null)
+            //{
+            //    throw new Exception("OOPS! This job does not seem to exist.");
+            //}
+            return "\nID: " + Id + " " + "\nName: " + Name + " " + "\nEmployer:" + EmployerName + "\nLocation:" + EmployerLocation + "\nPosition Type:" + JobType + "\nCore Competency:" + JobCoreCompetency + "\n";
         }
     }
 }

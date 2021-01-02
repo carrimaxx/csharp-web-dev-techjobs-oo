@@ -7,7 +7,7 @@ namespace TechJobsOO
     public abstract class JobField
     {
         public int Id { get; set; }
-        internal static int nextId = 1; //public? abstract?
+        private static int nextId = 1; 
         public string Value { get; set; }
 
         public JobField()
