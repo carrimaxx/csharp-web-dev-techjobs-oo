@@ -19,14 +19,16 @@ namespace TechJobsOO
             //Console.WriteLine(location.Value);
             //Console.WriteLine(location.Id);
 
-            //Job testJob = new Job(".NET Developer", new Employer("Microsoft"), new Location("New York"), new PositionType("Senior Developer"), new CoreCompetency("C#"));
-            //Job testJob2 = new Job(".NET Developer", new Employer("Microsoft"), new Location("New York"), new PositionType("Senior Developer"), new CoreCompetency("C#"));
+                //Job testJob = new Job(".NET Developer", new Employer("Microsoft"), new Location("New York"), new PositionType("Senior Developer"), new CoreCompetency("C#"));
+                //Job testJob2 = new Job(".NET Developer", new Employer("Microsoft"), new Location("New York"), new PositionType("Senior Developer"), new CoreCompetency("C#"));
 
-            //Console.WriteLine("test below");
-            //Console.WriteLine(testJob.Id);
-            //Console.WriteLine(testJob2.Id);
-            //Console.WriteLine(testJob2.EmployerName.Value);
-            //Console.WriteLine(testJob2.EmployerName.Id);
+                //Console.WriteLine("test below");
+                //Console.WriteLine(testJob.Id);
+                //Console.WriteLine(testJob2.Id);
+                //Console.WriteLine(testJob.EmployerName.Value);
+                //Console.WriteLine(testJob.EmployerName.Id);
+                //Console.WriteLine(testJob2.EmployerName.Value);
+                //Console.WriteLine(testJob2.EmployerName.Id);
 
 
             //Job sampleJob1 = new Job();
@@ -35,8 +37,6 @@ namespace TechJobsOO
             //Console.WriteLine("another test below");
             //Console.WriteLine(sampleJob1.Id);
             //Console.WriteLine(sampleJob2.Id);
-
-
 
 
             Job job1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));

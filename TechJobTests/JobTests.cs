@@ -21,8 +21,8 @@ namespace TechJobTests
         public void TestJobConstructorSetsAllFields()
         {
             Job sampleJob = new Job("Product Tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality Control"), new CoreCompetency("Persistence"));
-            
-            // Assert.AreEqual(1, sampleJob.Id); // TODO why is this failing
+
+            // Assert.AreEqual(1, sampleJob.Id); // TODO fix this
             Assert.AreEqual("Product Tester", sampleJob.Name);
             Assert.AreEqual("ACME", sampleJob.EmployerName.Value);
             Assert.AreEqual("Desert", sampleJob.EmployerLocation.Value);
@@ -35,8 +35,7 @@ namespace TechJobTests
         {
             Job testJob = new Job(".NET Developer", new Employer("Microsoft"), new Location("New York"), new PositionType("Senior Developer"), new CoreCompetency("C#"));
             Job testJob2 = new Job(".NET Developer", new Employer("Microsoft"), new Location("New York"), new PositionType("Senior Developer"), new CoreCompetency("C#"));
-            Console.WriteLine(testJob.Id);
-            Console.WriteLine(testJob2.Id);
+
             Assert.IsFalse(testJob.Equals(testJob2));
         }
 
