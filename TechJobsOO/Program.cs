@@ -10,34 +10,6 @@ namespace TechJobsOO
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.BackgroundColor = ConsoleColor.White;
             Console.Clear();
-            //sample dec29: 
-            //Employer sample = new Employer("LaunchCode");
-            //Console.WriteLine(sample.Value);
-            //Console.WriteLine(sample.Id);
-
-            //Location location = new Location("Chicago");
-            //Console.WriteLine(location.Value);
-            //Console.WriteLine(location.Id);
-
-                //Job testJob = new Job(".NET Developer", new Employer("Microsoft"), new Location("New York"), new PositionType("Senior Developer"), new CoreCompetency("C#"));
-                //Job testJob2 = new Job(".NET Developer", new Employer("Microsoft"), new Location("New York"), new PositionType("Senior Developer"), new CoreCompetency("C#"));
-
-                //Console.WriteLine("test below");
-                //Console.WriteLine(testJob.Id);
-                //Console.WriteLine(testJob2.Id);
-                //Console.WriteLine(testJob.EmployerName.Value);
-                //Console.WriteLine(testJob.EmployerName.Id);
-                //Console.WriteLine(testJob2.EmployerName.Value);
-                //Console.WriteLine(testJob2.EmployerName.Id);
-
-
-            //Job sampleJob1 = new Job();
-            //Job sampleJob2 = new Job();
-
-            //Console.WriteLine("another test below");
-            //Console.WriteLine(sampleJob1.Id);
-            //Console.WriteLine(sampleJob2.Id);
-
 
             Job job1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
             Job job2 = new Job("Web Developer", new Employer("LaunchCode"), new Location("St. Louis"), new PositionType("Front-end developer"), new CoreCompetency("JavaScript"));

@@ -27,17 +27,5 @@ namespace TechJobsOO
 
         public abstract override string ToString();
         
-
-        //public override string ToString()
-        //{
-        //    if (Value == "")
-        //    {
-        //        return " Data not available ";
-        //    }
-        //    else
-        //    {
-        //        return " " + Value + " ";
-        //    }
-        //}
     }
 }
